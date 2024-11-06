@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devclub QA Training</title>
+</head>
+
+<body>
+    <form id="taskForm" class="task-form">
+        <div class="form-group">
+            <label for="taskTitle">Task Title:</label>
+            <input type="text" id="taskTitle" name="taskTitle" required>
+            <span class="error-message" id="titleError"></span>
+        </div>
+        <div class="form-group">
+            <label for="taskPriority">Priority:</label>
+            <select id="taskPriority" name="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate">
+        </div>
+        <button type="submit">Create Task</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
